@@ -25,7 +25,7 @@ export function Navbar() {
     <header className="bg-[#101010] z-50 flex justify-between items-center h-24 p-4 border-b-1 border-b-[#fafafa] mr-12 ml-12  md:h-24 font-manrope uppercase tracking-wider ">
       <nav className=" relative container mx-auto max-w-6xl w-full flex justify-between items-center">
 
-        <button className='text-white md:hidden focus:outline-none mr-4' onClick={handleNav}>
+        <button className='text-white lg:hidden focus:outline-none mr-4' onClick={handleNav}>
           <img src='src/assets/shared/tablet/icon-hamburger.svg' alt='menu icon' />
         </button>
 
@@ -36,7 +36,7 @@ export function Navbar() {
 
         {/* Desktop Navigation */}
 
-        <ul className='hidden md:flex md:flex-row items-center justify-center  md:space-x-8  md:static  md:w-auto'>
+        <ul className='hidden lg:flex lg:flex-row items-center justify-center  lg:space-x-8  lg:static  lg:w-auto'>
 
           {navLinks.map((link) => (
             <li key={link.name} className="text-[#ffff]">
@@ -55,7 +55,7 @@ export function Navbar() {
 
         {isMenuOpen && (
 
-          <ul className=' flex flex-col items-center absolute top-16 left-0 shadow-lg  w-full bg-[#101010] z-50 p-6 space-y-4 md:hidden rounded-b-lg animate-slideDown border-[#fafafa] text-white'>
+          <ul className='flex flex-col items-center absolute top-16 left-0 shadow-lg  w-full bg-[#101010] z-50 p-6 space-y-4  lg:hidden rounded-b-lg animate-slideDown border-[#fafafa] text-white'>
             {navLinks.map((link) => (
               <li key={link.name} className='w-full text-center border-b pb-2 border-[#fafafa] last:border-0'>
                 <Link to={link.path} onClick={handleNav}>{link.name}</Link>
