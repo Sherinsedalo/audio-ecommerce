@@ -1,6 +1,6 @@
 export function AboutUs() {
     return (
-        <div className="flex flex-col lg:flex-row items-center justify-center text-center p-6 gap-6 bg-[#f1f1f1] font-manrope">
+        <div className="flex flex-col lg:flex-row-reverse lg:gap-19 items-center justify-center text-center p-6 gap-6 bg-[#f1f1f1] font-manrope">
             <picture>
                 <source srcSet="src/assets/shared/desktop/image-best-gear.jpg"
                     media="(min-width:1024px)" />

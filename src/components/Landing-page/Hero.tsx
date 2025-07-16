@@ -1,4 +1,5 @@
-import { Link } from "react-router-dom";
+
+import { SeeProductButton } from '../buttons/ProductBtn';
 export function Hero() {
 
     return (
@@ -8,9 +9,8 @@ export function Hero() {
                 <h1 className="font-bold text-5xl lg:text-9xl lg:font-bold"> XX99 Mark II Headphones</h1>
                 <p className="font-extralight leading-8 text-lg"> Experience natural, lifelike audio and exceptional build quality made for the passionate music enthusiast.
                 </p>
-                <Link to="/headphones" className=" mx-auto text-white bg-[#D87D4A] hover:bg-[#FBAF85] px-6 py-3 transition-colors duration-300 uppercase w-40 lg:mx-0 lg:w-50 lg:text-xl">
-                    See product
-                </Link>
+                <SeeProductButton to="/headphones" variant="orange" className=" w-40 lg:mx-0 lg:w-50 lg:text-xl" />
+
             </div>
         </div>
     )
