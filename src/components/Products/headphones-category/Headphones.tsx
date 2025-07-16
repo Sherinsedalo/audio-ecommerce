@@ -22,7 +22,7 @@ export const Headphones = () => {
                         </div>
                     </div>
 
-                    {/* Second headphone - image on right for desktop */}
+                    {/* Second headphone*/}
                     <div className="flex flex-col items-center text-center px-6 md:px-9 gap-8 md:gap-12 md:py-6 lg:flex-row-reverse lg:justify-center lg:items-center lg:max-w-7xl">
                         <img src="src/assets/product-xx99-mark-one-headphones/mobile/image-product.jpg" alt="Headphone model" className="rounded-lg w-full max-w-md lg:w-1/2" />
                         <div className="lg:w-1/2 flex flex-col items-center lg:items-start text-center lg:text-left gap-6">
