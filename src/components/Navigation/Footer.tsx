@@ -21,7 +21,7 @@ export function Footer() {
 
                 {/* Logo */}
                 <Link to='/' className='hover:pointer'>
-                    <img src='src/assets/shared/desktop/logo.svg' />
+                    <img src='/assets/shared/desktop/logo.svg' />
                 </Link>
 
                 <ul className='flex flex-col md:flex-row gap-4 items-center justify-center lg:space-x-8 '>
@@ -42,9 +42,9 @@ export function Footer() {
 
                     {/* social media icons */}
                     <div className='flex gap-4 md:ml-auto'>
-                        <img src='src/assets/shared/desktop/icon-facebook.svg' alt='facebook icon' />
-                        <img src='src/assets/shared/desktop/icon-instagram.svg' alt='instagram icon' />
-                        <img src='src/assets/shared/desktop/icon-twitter.svg' alt='twitter icon' />
+                        <img src='/assets/shared/desktop/icon-facebook.svg' alt='facebook icon' />
+                        <img src='/assets/shared/desktop/icon-instagram.svg' alt='instagram icon' />
+                        <img src='/assets/shared/desktop/icon-twitter.svg' alt='twitter icon' />
 
                     </div>
                 </div>

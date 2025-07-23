@@ -26,12 +26,12 @@ export function Navbar() {
       <nav className=" relative container mx-auto max-w-6xl w-full flex justify-between items-center">
 
         <button className='text-white lg:hidden focus:outline-none mr-4' onClick={handleNav}>
-          <img src='src/assets/shared/tablet/icon-hamburger.svg' alt='menu icon' />
+          <img src='/assets/shared/tablet/icon-hamburger.svg' alt='menu icon' />
         </button>
 
         {/* Logo */}
         <Link to='/' className='hover:pointer'>
-          <img src='src/assets/shared/desktop/logo.svg' />
+          <img src='/assets/shared/desktop/logo.svg' />
         </Link>
 
         {/* Desktop Navigation */}
@@ -48,7 +48,7 @@ export function Navbar() {
 
         {/* Cart Icon */}
         <Link to='/cart' className='hover:pointer'>
-          <img src="src/assets/shared/desktop/icon-cart.svg" className=' md:block' alt='cart icon' />
+          <img src="/assets/shared/desktop/icon-cart.svg" className=' md:block' alt='cart icon' />
         </Link>
 
         {/* Mobile Menu */}
