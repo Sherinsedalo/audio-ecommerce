@@ -35,15 +35,16 @@ export const CartProvider = ({ children }: CartProviderProps) => {
 
     const addToCart = (item: CartItem) => {
         const isItemInCart = cartItems.find((cartItem) => cartItem.id === item.id);
+
         if (isItemInCart) {
             setCartItems(
                 cartItems.map(cartItem =>
-                    cartItem.id === item.id ? { ...cartItem, quantity: cartItem.quantity + 1 } : cartItem
+                    cartItem.id === item.id ? { ...cartItem, quantity: cartItem.quantity + item.quantity } : cartItem
                 )
             );
 
         } else {
-            setCartItems([...cartItems, { ...item, quantity: 1 }]);
+            setCartItems([...cartItems, { ...item }]);
         }
 
 

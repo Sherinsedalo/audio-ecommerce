@@ -9,7 +9,7 @@ export function Hero() {
                 <h1 className="font-bold text-5xl lg:text-9xl lg:font-bold"> XX99 Mark II Headphones</h1>
                 <p className="font-extralight leading-8 text-lg"> Experience natural, lifelike audio and exceptional build quality made for the passionate music enthusiast.
                 </p>
-                <SeeProductButton to="/earphones/MarkTwoHeadphones" variant="orange" className=" w-40 lg:mx-0 lg:w-50 lg:text-xl" />
+                <SeeProductButton to="/headphones/MarkTwoHeadphones" variant="orange" className=" w-40 lg:mx-0 lg:w-50 lg:text-xl" />
 
             </div>
         </div>

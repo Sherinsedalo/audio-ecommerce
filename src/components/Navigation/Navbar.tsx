@@ -29,7 +29,7 @@ export function Navbar() {
           <img src='/assets/shared/tablet/icon-hamburger.svg' alt='menu icon' />
         </button>
 
-        {/* Logo */}
+        {/* Page Logo */}
         <Link to='/' className='hover:pointer'>
           <img src='/assets/shared/desktop/logo.svg' />
         </Link>
@@ -47,7 +47,7 @@ export function Navbar() {
         </ul>
 
         {/* Cart Icon */}
-        <Link to='/cart' className='hover:pointer'>
+        <Link to='/cartPage' className='hover:pointer'>
           <img src="/assets/shared/desktop/icon-cart.svg" className=' md:block' alt='cart icon' />
         </Link>
 
