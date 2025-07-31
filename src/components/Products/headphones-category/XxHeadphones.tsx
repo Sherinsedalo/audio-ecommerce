@@ -11,7 +11,11 @@ type BoxItem = {
 };
 
 export function XxHeadphones() {
-    const [quantity, setQuantity] = useState(0);
+    const [quantity, setQuantity] = useState(1);
+
+    const handleResetQuantity = () => {
+        setQuantity(1);
+    }
 
     const boxItems: BoxItem[] = [
         { quantity: '1x', item: "Headphone unit" },
@@ -48,7 +52,7 @@ export function XxHeadphones() {
                         <QuantityButton quantity={quantity} setQuantity={setQuantity} />
 
 
-                        <AddToCartBtn product={{ id: 'xx59-headphones', name: 'XX59 Headphones', price: 899, quantity }} />
+                        <AddToCartBtn product={{ id: 'xx59-headphones', name: 'XX59 Headphones', price: 899, quantity }} onAdd={handleResetQuantity} />
 
 
                     </div>
@@ -90,13 +94,13 @@ export function XxHeadphones() {
                     <picture>
                         <source media="(min-width: 1024px)" srcSet="/assets/product-xx59-headphones/desktop/image-gallery-2.jpg" />
                         <source media="(min-width: 768px)" srcSet="/assets/product-xx59-headphones/tablet/image-gallery-2.jpg" />
-                        <img src="/assets/product-xx59-headphones/mobile/image-gallery-2.jpg" alt="Gallery image 1" className="w-full max-w-md rounded-lg" />
+                        <img src="/assets/product-xx59-headphones/mobile/image-gallery-2.jpg" alt="Gallery image 2" className="w-full max-w-md rounded-lg" />
                     </picture>
                 </div>
                 <picture>
                     <source media="(min-width: 1024px)" srcSet="/assets/product-xx59-headphones/desktop/image-gallery-3.jpg" />
                     <source media="(min-width: 768px)" srcSet="/assets/product-xx59-headphones/tablet/image-gallery-3.jpg" />
-                    <img src="/assets/product-xx59-headphones/mobile/image-gallery-3.jpg" alt="Gallery image 1" className="w-full max-w-md lg:h-full lg:object-cover rounded-lg" />
+                    <img src="/assets/product-xx59-headphones/mobile/image-gallery-3.jpg" alt="Gallery image 3" className="w-full max-w-md lg:h-full lg:object-cover rounded-lg" />
                 </picture>
             </div>
 

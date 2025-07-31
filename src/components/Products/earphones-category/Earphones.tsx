@@ -20,7 +20,7 @@ export const Earphones = () => {
                                 Enjoy incredible high-fidelity sound even in noisy environments with its active noise cancellation feature.
                                 .</p>
 
-                            <SeeProductButton to="/earphones" variant="orange" />
+                            <SeeProductButton to="/earphones/wirelessEarphones" variant="orange" />
                         </div>
                     </div>
 

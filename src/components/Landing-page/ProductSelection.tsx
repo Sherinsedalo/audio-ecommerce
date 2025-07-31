@@ -16,13 +16,13 @@ export function ProductSelection() {
                     <img src='/assets/home/mobile/image-speaker-zx9.png' alt='speaker model' className='w-32 h-40 md:w-40 md:h-50 object-contain' />
                     <h2 className='text-4xl text-[#f1f1f1] font-semibold'>ZX9 speaker</h2>
                     <p className='lowercase font-medium text-sm leading-7'> Upgrade to premium speakers that are phenomenally built to deliver truly remarkable sound.</p>
-                    <SeeProductButton to='/speakers' variant='primary' />
+                    <SeeProductButton to='/speakers/ZxSevenSpeaker' variant='primary' />
                 </div>
 
                 {/* second speaker section */}
                 <div className='rounded-lg flex flex-col items-start justify-center p-6 bg-[url(/assets/home/mobile/image-speaker-zx7.jpg)]  h-80 w-96 bg-cover bg-center  md:w-xl md:h-lg object-contain'>
                     <h2 className='text-4xl text-[#101010] font-semibold'>ZX7 speaker</h2>
-                    <SeeProductButton to='/speakers' variant='secondary' />
+                    <SeeProductButton to='/speakers/ZxSevenSpeaker' variant='secondary' />
                 </div>
 
                 {/* earphones section*/}
@@ -31,7 +31,7 @@ export function ProductSelection() {
                 </div>
                 <div className='flex flex-col items-center justify-center pt-6'>
                     <h2 className='text-4xl text-[#101010] font-semibold'>YX1 earphones</h2>
-                    <SeeProductButton to='/speakers' variant='secondary' />
+                    <SeeProductButton to='/earphones/wirelessEarphones' variant='secondary' />
                 </div>
             </section>
         </div>

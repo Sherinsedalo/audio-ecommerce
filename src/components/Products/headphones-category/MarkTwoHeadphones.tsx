@@ -11,7 +11,12 @@ type BoxItem = {
 };
 
 export function MarkTwoHeadphones() {
-    const [quantity, setQuantity] = useState(0);
+    const [quantity, setQuantity] = useState(1);
+
+    const handleResetQuantity = () => {
+        setQuantity(1);
+    }
+
 
     const boxItems: BoxItem[] = [
         { quantity: '1x', item: "Headphone unit" },
@@ -43,11 +48,10 @@ export function MarkTwoHeadphones() {
                             premium headphone experience by reproducing the balanced depth and precision of
                             studio-quality sound.</p>
                         <p className="font-bold tracking-wider">$2,999</p>
-                        {/* quantity button */}
+                       
                         <QuantityButton quantity={quantity} setQuantity={setQuantity} />
-                        {/* add to cart button */}
 
-                        <AddToCartBtn product={{ id: 'xx99-mark-ii', name: 'XX99 Mark II Headphones', price: 2999, quantity }} />
+                        <AddToCartBtn product={{ id: 'xx99-mark-ii', name: 'XX99 Mark II Headphones', price: 2999, quantity }} onAdd={handleResetQuantity} />
 
 
                     </div>
@@ -89,13 +93,13 @@ export function MarkTwoHeadphones() {
                     <picture>
                         <source media="(min-width: 1024px)" srcSet="/assets/product-xx99-mark-two-headphones/desktop/image-gallery-2.jpg" />
                         <source media="(min-width: 768px)" srcSet="/assets/product-xx99-mark-two-headphones/tablet/image-gallery-2.jpg" />
-                        <img src="/assets/product-xx99-mark-two-headphones/mobile/image-gallery-2.jpg" alt="Gallery image 1" className="w-full max-w-md rounded-lg" />
+                        <img src="/assets/product-xx99-mark-two-headphones/mobile/image-gallery-2.jpg" alt="Gallery image 2" className="w-full max-w-md rounded-lg" />
                     </picture>
                 </div>
                 <picture>
                     <source media="(min-width: 1024px)" srcSet="/assets/product-xx99-mark-two-headphones/desktop/image-gallery-3.jpg" />
                     <source media="(min-width: 768px)" srcSet="/assets/product-xx99-mark-two-headphones/tablet/image-gallery-3.jpg" />
-                    <img src="/assets/product-xx99-mark-two-headphones/mobile/image-gallery-3.jpg" alt="Gallery image 1" className="w-full max-w-md lg:h-full lg:object-cover rounded-lg" />
+                    <img src="/assets/product-xx99-mark-two-headphones/mobile/image-gallery-3.jpg" alt="Gallery image 3" className="w-full max-w-md lg:h-full lg:object-cover rounded-lg" />
                 </picture>
             </div>
 

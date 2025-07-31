@@ -20,7 +20,7 @@ export const Speakers = () => {
                                 system that offers truly wireless connectivity -- creating new possibilities for more
                                 pleasing and practical audio setups.</p>
 
-                            <SeeProductButton to="/speakers" variant="orange" />
+                            <SeeProductButton to="/speakers/ZxNineSpeaker" variant="orange" />
                         </div>
                     </div>
 
@@ -34,7 +34,7 @@ export const Speakers = () => {
                                 high-end audiophile components that represents the top of the line powered speakers for
                                 home or studio use.</p>
 
-                            <SeeProductButton to="/speakers" variant="orange" />
+                            <SeeProductButton to="/speakers/ZxSevenSpeaker" variant="orange" />
                         </div>
                     </div>
 

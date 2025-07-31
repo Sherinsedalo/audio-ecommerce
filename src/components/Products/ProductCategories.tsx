@@ -11,7 +11,7 @@ export function ProductCategories() {
 
     const productItems: ProductItem[] = [
         {
-            image: '/assets/product-xx99-mark-one-headphones/mobile/image-category-page-preview.jpg',
+            image: '/assets/product-xx99-mark-one-headphones/mobile/image-product.jpg',
             title: 'Headphones',
             btnLink: '/headphones',
         },

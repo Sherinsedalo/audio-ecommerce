@@ -11,7 +11,12 @@ type BoxItem = {
 };
 
 export function MarkOneHeadphones() {
-    const [quantity, setQuantity] = useState(0);
+    const [quantity, setQuantity] = useState(1);
+
+    const handleResetQuantity = () => {
+        setQuantity(1);
+    }
+
 
     const boxItems: BoxItem[] = [
         { quantity: '1x', item: "Headphone unit" },
@@ -47,7 +52,7 @@ export function MarkOneHeadphones() {
                         <QuantityButton quantity={quantity} setQuantity={setQuantity} />
 
 
-                        <AddToCartBtn product={{ id: 'xx99-mark-i', name: 'XX99 Mark I Headphones', price: 1750, quantity }} />
+                        <AddToCartBtn product={{ id: 'xx99-mark-i', name: 'XX99 Mark I Headphones', price: 1750, quantity }} onAdd={handleResetQuantity} />
 
 
                     </div>
@@ -89,13 +94,13 @@ export function MarkOneHeadphones() {
                     <picture>
                         <source media="(min-width: 1024px)" srcSet="/assets/product-xx99-mark-one-headphones/desktop/image-gallery-2.jpg" />
                         <source media="(min-width: 768px)" srcSet="/assets/product-xx99-mark-one-headphones/tablet/image-gallery-2.jpg" />
-                        <img src="/assets/product-xx99-mark-one-headphones/mobile/image-gallery-2.jpg" alt="Gallery image 1" className="w-full max-w-md rounded-lg" />
+                        <img src="/assets/product-xx99-mark-one-headphones/mobile/image-gallery-2.jpg" alt="Gallery image 2" className="w-full max-w-md rounded-lg" />
                     </picture>
                 </div>
                 <picture>
                     <source media="(min-width: 1024px)" srcSet="/assets/product-xx99-mark-one-headphones/desktop/image-gallery-3.jpg" />
                     <source media="(min-width: 768px)" srcSet="/assets/product-xx99-mark-one-headphones/tablet/image-gallery-3.jpg" />
-                    <img src="/assets/product-xx99-mark-one-headphones/mobile/image-gallery-3.jpg" alt="Gallery image 1" className="w-full max-w-md lg:h-full lg:object-cover rounded-lg" />
+                    <img src="/assets/product-xx99-mark-one-headphones/mobile/image-gallery-3.jpg" alt="Gallery image 3" className="w-full max-w-md lg:h-full lg:object-cover rounded-lg" />
                 </picture>
             </div>
 

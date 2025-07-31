@@ -2,13 +2,19 @@ import { useContext } from "react";
 import { CartContext } from "../../context/cart";
 import type { CartItem } from "../../context/cart";
 
-export function AddToCartBtn({ product}: { product: CartItem }) {
+type AddToCartBtnProps = {
+    product: CartItem;
+    onAdd?: () => void;
+};
+
+export function AddToCartBtn({ product, onAdd }: AddToCartBtnProps) {
     const cart = useContext(CartContext);
 
     if (!cart) return null;
 
     const handleAddToCart = () => {
         cart.addToCart(product);
+        if (onAdd) onAdd();
     };
 
     return (
