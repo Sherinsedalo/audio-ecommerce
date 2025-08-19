@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
+import { CartModal } from '../../pages/cart/CartModal';
 
 
 type NavLink = {
@@ -9,6 +10,7 @@ type NavLink = {
 
 export function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isCartOpen, setIsCartOpen] = useState(false);
 
   const handleNav = () => {
     setIsMenuOpen(!isMenuOpen)
@@ -47,9 +49,10 @@ export function Navbar() {
         </ul>
 
         {/* Cart Icon */}
-        <Link to='/cartPage' className='hover:pointer'>
+        <Link to='#' onClick={() => setIsCartOpen(true)} className='hover:pointer'>
           <img src="/assets/shared/desktop/icon-cart.svg" className=' md:block' alt='cart icon' />
         </Link>
+        {isCartOpen && <CartModal onClose={() => setIsCartOpen(false)} />}
 
         {/* Mobile Menu */}
 

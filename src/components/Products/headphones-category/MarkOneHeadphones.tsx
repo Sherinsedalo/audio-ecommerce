@@ -52,7 +52,7 @@ export function MarkOneHeadphones() {
                         <QuantityButton quantity={quantity} setQuantity={setQuantity} />
 
 
-                        <AddToCartBtn product={{ id: 'xx99-mark-i', name: 'XX99 Mark I Headphones', price: 1750, quantity }} onAdd={handleResetQuantity} />
+                        <AddToCartBtn product={{ id: 'xx99-mark-i', name: 'XX99 Mark I Headphones', price: 1750, quantity, image: "/assets/product-xx99-mark-one-headphones/mobile/image-product.jpg" }} onAdd={handleResetQuantity} />
 
 
                     </div>

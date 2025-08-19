@@ -10,7 +10,7 @@ import XxHeadphonesDetails from './pages/headphonesDetails/XxHeadphonesDetails.t
 import ZxSevenSpeakerDetails from './pages/speakersDetails/ZxSevenSpeakerDetails.tsx';
 import ZxNineSpeakerDetails from './pages/speakersDetails/ZxNineSpeakerDetails.tsx';
 import { WirelessEarphones } from './components/Products/earphones-category/YxEarphones.tsx';
-import { CartPage } from './pages/cart/CartPage';
+import { Checkout } from './pages/cart/Checkout.tsx';
 import { Navbar } from './components/Navigation/Navbar';
 import { AboutUs } from './components/Landing-page/AboutUs';
 import { Footer } from './components/Navigation/Footer';
@@ -36,7 +36,7 @@ function App() {
           <Route path='/earphones/wirelessEarphones' element={<WirelessEarphones />} />
           <Route path='/speakers/ZxNinespeaker' element={<ZxNineSpeakerDetails />} />
           <Route path='/speakers/ZxSevenSpeaker' element={<ZxSevenSpeakerDetails />} />
-          <Route path='/cartPage' element={< CartPage />} />
+          <Route path='/checkout' element={< Checkout />} />
 
         </Routes>
         <AboutUs />

@@ -16,7 +16,7 @@ export function WirelessEarphones() {
     const handleResetQuantity = () => {
         setQuantity(1);
     }
-    
+
 
     const boxItems: BoxItem[] = [
         { quantity: '2x', item: "Earphone unit" },
@@ -53,7 +53,7 @@ export function WirelessEarphones() {
                         <QuantityButton quantity={quantity} setQuantity={setQuantity} />
 
 
-                        <AddToCartBtn product={{ id: 'yxi-wireless-earphones', name: 'YX1 Wireless Earphones', price: 599, quantity }} onAdd={handleResetQuantity} />
+                        <AddToCartBtn product={{ id: 'yxi-wireless-earphones', name: 'YX1 Wireless Earphones', price: 599, quantity, image: "/assets/product-yx1-earphones/mobile/image-product.jpg" }} onAdd={handleResetQuantity} />
 
 
                     </div>

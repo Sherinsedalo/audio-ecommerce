@@ -4,6 +4,7 @@ type CartContextType = {
     cartItems: CartItem[];
     addToCart: (item: CartItem) => void;
     removeFromCart: (id: string) => void;
+    updateQuantity: (id: string, quantity: number) => void;
     clearCart: () => void;
     getCartTotal: () => number;
 };
@@ -16,6 +17,7 @@ export type CartItem = {
     name: string;
     price: number;
     quantity: number;
+    image: string;
 };
 
 export const CartContext = createContext<CartContextType | null>(null);
@@ -66,6 +68,11 @@ export const CartProvider = ({ children }: CartProviderProps) => {
                 ));
         }
     };
+    const updateQuantity = (id: string, quantity: number) => {
+        setCartItems(prev => prev
+            .map(item => item.id === id ? { ...item, quantity } : item)
+            .filter(item => item.quantity > 0));
+    }
 
     const clearCart = () => {
         setCartItems([]);
@@ -76,7 +83,7 @@ export const CartProvider = ({ children }: CartProviderProps) => {
 
 
     return (
-        <CartContext.Provider value={{ cartItems, addToCart, removeFromCart, clearCart, getCartTotal }}> {children}</CartContext.Provider>
+        <CartContext.Provider value={{ cartItems, addToCart, removeFromCart, updateQuantity, clearCart, getCartTotal }}> {children}</CartContext.Provider>
 
     )
 };

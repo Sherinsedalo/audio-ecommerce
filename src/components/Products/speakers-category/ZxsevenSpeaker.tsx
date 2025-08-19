@@ -13,11 +13,11 @@ type BoxItem = {
 
 export function ZxSevenSpeaker() {
     const [quantity, setQuantity] = useState(1);
-    
+
     const handleResetQuantity = () => {
         setQuantity(1);
     }
-    
+
 
     const boxItems: BoxItem[] = [
         { quantity: '2x', item: "Speaker Unit" },
@@ -54,7 +54,7 @@ export function ZxSevenSpeaker() {
                         <QuantityButton quantity={quantity} setQuantity={setQuantity} />
 
 
-                        <AddToCartBtn product={{ id: 'zxSevenSpeaker', name: 'ZX7 Speaker', price: 3500, quantity }} onAdd={handleResetQuantity}/>
+                        <AddToCartBtn product={{ id: 'zxSevenSpeaker', name: 'ZX7 Speaker', price: 3500, quantity, image: "/assets/product-zx7-speaker/mobile/image-product.jpg" }} onAdd={handleResetQuantity} />
 
 
                     </div>

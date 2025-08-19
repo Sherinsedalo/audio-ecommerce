@@ -48,10 +48,10 @@ export function MarkTwoHeadphones() {
                             premium headphone experience by reproducing the balanced depth and precision of
                             studio-quality sound.</p>
                         <p className="font-bold tracking-wider">$2,999</p>
-                       
+
                         <QuantityButton quantity={quantity} setQuantity={setQuantity} />
 
-                        <AddToCartBtn product={{ id: 'xx99-mark-ii', name: 'XX99 Mark II Headphones', price: 2999, quantity }} onAdd={handleResetQuantity} />
+                        <AddToCartBtn product={{ id: 'xx99-mark-ii', name: 'XX99 Mark II Headphones', price: 2999, quantity, image: "/assets/product-xx99-mark-two-headphones/mobile/image-product.jpg" }} onAdd={handleResetQuantity} />
 
 
                     </div>

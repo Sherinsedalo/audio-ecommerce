@@ -52,7 +52,7 @@ export function XxHeadphones() {
                         <QuantityButton quantity={quantity} setQuantity={setQuantity} />
 
 
-                        <AddToCartBtn product={{ id: 'xx59-headphones', name: 'XX59 Headphones', price: 899, quantity }} onAdd={handleResetQuantity} />
+                        <AddToCartBtn product={{ id: 'xx59-headphones', name: 'XX59 Headphones', price: 899, quantity, image: "/assets/product-xx59-headphones/mobile/image-product.jpg" }} onAdd={handleResetQuantity} />
 
 
                     </div>

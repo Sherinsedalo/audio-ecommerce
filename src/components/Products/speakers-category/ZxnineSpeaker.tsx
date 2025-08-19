@@ -12,7 +12,7 @@ type BoxItem = {
 
 export function ZxNineSpeaker() {
     const [quantity, setQuantity] = useState(1);
-    
+
     const handleResetQuantity = () => {
         setQuantity(1);
     }
@@ -51,7 +51,7 @@ export function ZxNineSpeaker() {
                         <QuantityButton quantity={quantity} setQuantity={setQuantity} />
 
 
-                        <AddToCartBtn product={{ id: 'zxNineSpeaker', name: 'ZX9 Speaker', price: 4500, quantity }} onAdd={handleResetQuantity} />
+                        <AddToCartBtn product={{ id: 'zxNineSpeaker', name: 'ZX9 Speaker', price: 4500, quantity, image: "/assets/product-zx9-speaker/mobile/image-product.jpg" }} onAdd={handleResetQuantity} />
 
 
                     </div>
