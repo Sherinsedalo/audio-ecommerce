@@ -40,7 +40,7 @@ export function CartModal({ onClose }: { onClose: () => void }) {
                                 <span className="uppercase text-gray">Total</span>
                                 <span className="font-bold text-black">${cart.getCartTotal()}</span>
                             </div>
-                            <Link to='/checkout' className="block mt-6 bg-[#D87D4A] text-white py-2 text-center font-semibold uppercase">Checkout</Link>
+                            <Link to='/checkout' className="block mt-6 bg-[#D87D4A] text-white py-2 text-center font-semibold uppercase" onClick={onClose}>Checkout</Link>
                         </>
 
                     </div>
